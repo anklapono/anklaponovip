@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Menu MOD - iPhone 11 Pro Max</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0a0a0a;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+    }
+
+    header {
+      background: #111;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 2px solid #444;
+    }
+
+    .menu {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .toggle-btn {
+      background: linear-gradient(145deg, #1e1e1e, #292929);
+      border: none;
+      padding: 15px;
+      font-size: 18px;
+      color: #0ff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,255,255,0.2);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .toggle-btn.active {
+      background: linear-gradient(145deg, #005b8a, #008cd6);
+      color: #00bfff;
+      box-shadow: 0 0 15px #00bfff, 0 0 8px #00bfff inset;
+    }
+
+    .save-btn {
+      width: 90%;
+      background: #222;
+      padding: 12px;
+      color: #ff0;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      margin: 5px 0;
+    }
+
+    .save-btn:hover {
+      background: #333;
+    }
+
+    footer {
+      background: #111;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: #888;
+      border-top: 2px solid #444;
+    }
+
+    #notify {
+      position: fixed;
+      bottom: 80px;
+      background: rgba(0, 191, 255, 0.9);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+
+    #notify.show {
+      opacity: 1;
+    }
+
+    .ads-box {
+      background: #111;
+      border: 2px solid #00bfff;
+      padding: 15px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 400px;
+      margin: 10px auto;
+      text-align: center;
+      box-shadow: 0 0 10px #00bfff;
+      position: relative;
+    }
+
+    .ads-box h3 {
+      color: #00bfff;
+      margin: 0 0 10px;
+    }
+
+    .ads-box p {
+      margin: 5px 0;
+      color: #ccc;
+      font-size: 15px;
+    }
+
+    .ads-box a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #00bfff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .ads-close {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      color: #888;
+      cursor: pointer;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🍏 Menu Pannel V2 🍏</header>
+
+  <!-- 📢 Quảng cáo bán DPI -->
+  <div class="ads-box" id="adsBox">
+    <div class="ads-close" onclick="document.getElementById('adsBox').style.display='none'">✖</div>
+    <h3>🎯 Bán File RegSupper Chuẩn Cho Từng iPhone</h3>
+    <p>📱 Hỗ trợ mọi dòng máy: iPhone & Adr ( All Phiên Bản)</p>
+    <p>🔥 RegSupper cực nhạy - Anti band 100%</p>
+    <p>💰 Giá: Chỉ từ <strong>50.000VNĐ -> 1.000.000VNĐ</strong></p>
+    <a href="https://zalo.me/0388500273" target="_blank">💬 Liên hệ Zalo (Ấn Vào)</a>
+  </div>
+
+  <div class="menu">
+    <button class="toggle-btn" data-hack-code="#AIMLOCK" data-device-sensitivity="SEN-A">🎯Fix Rung Tâm </button>
+    <button class="toggle-btn" data-hack-code="#HS999" data-device-sensitivity="SEN-B" data-auto-headshot="AH-V3.1">🔫 Tăng Đầm Tầm 90%</button>
+    <button class="toggle-btn" data-hack-code="#WALLPASS" data-device-sensitivity="SEN-C"> Bám Đầu 90% </button>
+    <button class="toggle-btn" data-hack-code="#RECOIL_OFF" data-device-sensitivity="SEN-D">Giảm Delay 📲</button>
+    <button class="toggle-btn" data-hack-code="#ESP2025" data-device-sensitivity="SEN-E"> Giảm Lố Đầu 🛡️</button>
+    <button class="toggle-btn" data-hack-code="#FPSBOOST" data-device-sensitivity="SEN-F">🚀 Tăng FPS</button>
+    <button class="toggle-btn" data-hack-code="#RAMCLEAN" data-device-sensitivity="SEN-G">⚙️ Tối Ưu Thiết Bị📲 </button>
+    <button class="toggle-btn" data-hack-code="#SENPLUS" data-device-sensitivity="SEN-H">📱 Tăng Nhạy Màn</button>
+    <button class="toggle-btn" data-hack-code="#AIMCROSS" data-device-sensitivity="SEN-I"> Tăng Nhạy Tâm🍎 </button>
+    <button class="toggle-btn" data-hack-code="#REACTION" data-device-sensitivity="SEN-J">Giảm Lag Pin Yếu 🍏</button>
+  </div>
+
+  <!-- Nút Bật/Tắt Tất Cả -->
+  <button class="save-btn" id="toggleAllBtn" onclick="toggleAll()">🔘 Bật tất cả</button>
+
+  <!-- Nút Lưu Cấu Hình -->
+  <button class="save-btn" onclick="saveConfig()">☁️ Lưu Cấu Hình</button>
+
+  <div id="notify"></div>
+
+  <footer>Menu Pannel V2 | ADMIN: AnkLaPoNoRealLife ©</footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.toggle-btn');
+    const notify = document.getElementById('notify');
+    let allEnabled = false;
+
+    function showNotify(message) {
+      notify.textContent = message;
+      notify.classList.add('show');
+      setTimeout(() => {
+        notify.classList.remove('show');
+      }, 2500);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const saved = localStorage.getItem('ffmax_mod_config');
+      if (saved) {
+        const states = JSON.parse(saved);
+        buttons.forEach(btn => {
+          const code = btn.getAttribute('data-hack-code');
+          if (states[code]?.enabled) {
+            btn.classList.add('active');
+          }
+        });
+      }
+    });
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        const name = btn.textContent.trim();
+        const isOn = btn.classList.contains('active');
+        showNotify(isOn ? `✅ ${name} đã bật` : `❌ ${name} đã tắt`);
+      });
+    });
+
+    function saveConfig() {
+      const config = {};
+      buttons.forEach(btn => {
+        const code = btn.getAttribute('data-hack-code');
+        const sensitivity = btn.getAttribute('data-device-sensitivity');
+        const headshot = btn.getAttribute('data-auto-headshot') || null;
+        const isActive = btn.classList.contains('active');
+        config[code] = {
+          enabled: isActive,
+          sensitivity: sensitivity,
+          autoHeadshot: headshot
+        };
+      });
+      localStorage.setItem('ffmax_mod_config', JSON.stringify(config));
+      showNotify('☁️ Đã lưu cấu hình thành công');
+    }
+
+    function toggleAll() {
+      allEnabled = !allEnabled;
+      buttons.forEach(btn => {
+        if (allEnabled) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+      const toggleBtn = document.getElementById('toggleAllBtn');
+      toggleBtn.textContent = allEnabled ? "⚪ Tắt tất cả" : "🔘 Bật tất cả";
+      showNotify(allEnabled ? "✅ Đã bật tất cả chức năng" : "❌ Đã tắt tất cả chức năng");
+    }
+  </script>
+
+</body>
+</html>
